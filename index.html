@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Screven</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+    <script>
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
+
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( ".js-tooltip" ).tooltip();
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+          <i class="fa fa-bars"></i>
+          <span class="close-icon">&times;</span>
+        </a>
+        <nav class="floating-nav js-floating-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">
+                <i class="fa fa-female"></i>Summary
+              </a>
+            </li>
+            <li>
+              <a href="#work-experience">
+                <i class="fa fa-briefcase"></i>Experience
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa fa-line-chart"></i>Skills
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <i class="fa fa-mortar-board"></i>Education
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+          <div class="card profile-card">
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Alexandra K Screven" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/005/0a4/142/1224d5f.jpg" itemprop="image">
+                </div>
+
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Alex Screven</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Analyst &#183 Barre &#183 Animal Lover</h5>
+                </div>
+              </span>
+              <hr>
+
+              <div class="contact-details clearfix">
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+
+                      <span class="info">
+                        Washington, DC,
+                        USA
+                      </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-phone"></i>
+                    </span>
+
+                    <span class="info" itemprop="telephone">
+                      520-400-5952
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
+
+                    <span class="info">
+                      <a href="mailto:akscreven@gmail.com" class="link-disguise" itemprop="email">akscreven@gmail.com</a>
+                    </span>
+                  </div>
+
+
+
+              <hr>
+
+              <div class="social-links text-center">
+                  <a class="fa fa-linkedin fa-2x social-link link-linkedin" href="https://www.linkedin.com/in/akscreven" target="_blank"></a>
+                  <a class="fa fa-github fa-2x social-link link-github"href="https://github.com/ascreven" target="_blank"></a>
+                  <a class="fa fa-twitter fa-2x social-link link-twitter"
+                  href="https://twitter.com/ascreven" target="_blank"></a>
+                  <a class="fa fa-facebook-square fa-2x social-link link-facebook" href="https://www.facebook.com/alex.screven.7" target="_blank"></a>
+                  <a class="fa fa-google-plus-square fa-2x social-link link-googleplus" href="https://plus.google.com/u/0/?hl=en&_ga=1.152227711.716352365.1440363282" target="_blank"></a>
+              </div>
+          </div>
+        </section>
+
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <div class="background-details">
+              <div class="detail" id="about">
+                <div class="icon">
+                  <i class="fa fa-lg fa-female"></i>
+                  <span class="mobile-title">Who are you?</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Who are you? <span class="grey">Summary</span>
+                  </h4>
+
+                  <div class="content" itemprop="description">
+                    I&#x27;m an analyst who enjoys: <ul><li>Learning how to code</li>
+                    <ul><li>Python</li><li>R</li><li>HTML</li></ul><li>Practicing barre</li><li>Discovering new music</li><li>Playing with my dog</li><li>Enjoying nature</li><li>Having an ice-cold beer with good friends</li> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="work-experience">
+                <div class="icon">
+                  <i class="fa fa-lg fa-briefcase"></i>
+                  <span class="mobile-title">What have you done?</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    What have you done? <span class="grey">Experience</span>
+                  </h4>
+
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Economic Analyst</strong>,&nbsp;
+                              <a href="http://www.lepeabody.com"  target="_blank">L. E. Peabody and Associates</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Apr&nbsp;2013 -
+                                  2015
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years 3 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>I used a combination of research and data cleaning/warehousing to prepare business reports and expert testimony to prevent the railroads from abusing their oligopoly. 
+                            <ul>
+                              <li>Lead business intelligence project to estimate the cost of coal using a variety of environmental and market factors for an energy corporation that uses 39 million tons of coal annually</li>
+                              <li>Recommended business strategies for clients considering entrance into the natural gas market that led to a $350 million partnership</li>
+                              <li>Forecast railroad expenses by designing and building a data warehouse using data from various government departments and confidential railroad contracts</li>
+                              <li>Budgeted the cost of acquiring new railroad locomotives to comply with upcoming regulation and ensure the highest cost savings</li>
+                              <li>Compared formulas in over 500,000 lines of data to budgeting procedures and identified $10,000,000 of unclaimed revenue</li>
+                              <li>Identify railroad inefficiencies by modeling hypothetical rail systems in enterprise architect team</li>
+                              <li>Write instructions that explain how to use VLOOKUP, HLOOKUP, and Pivot Tables functions in Microsoft Excel to update data management systems and ensure in-house efficiency and data standardization</li></ul></p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                                <p> <strong>Joined:</strong>
+                              June&nbsp;2013
+                            </p>
+                            <p>
+                                <strong>Left:</strong>
+                                Aug&nbsp;2015
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years 3 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Intern</strong>,&nbsp;
+                              <a href="http://www.lepeabody.com"  target="_blank">L. E. Peabody and Associates</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                May&nbsp;2012 -
+                                  May&nbsp;2013
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year
+                                </span>
+                            </small>
+                          </p>
+                          <p>I worked primarily on researching and cataloging changes in the energy and transportation industries.</p>
+                          <ul><li>Wrote expert rebuttal testimony in rail rate case that analyzed the relevance of various land inflation indices leading to tens of millions of dollars of cost savings for client system</li>
+                          <li>Data mined public energy contracts for coal and natural gas prices</li></ul></p>
+
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p> <strong>Joined:</strong>
+                              May&nbsp;2012
+                            </p>
+                            <p>
+                                <strong>Left:</strong>
+                                May&nbsp;2013
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              1 year
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Sales Associate</strong>,&nbsp;
+                              <a href="http://www.sunglasshut.com"  target="_blank">Sunglass Hut</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Jan&nbsp;2011 -
+                                  Aug&nbsp;2012
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year 8 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>I assisted customers in sunglass purchases and repairs.</p><ul><li>Exceeded 2011 sales goal of $72,070.50 by $14,750 by helping customers find sunglasses that fit their individual needs</li>
+                          <li>Mentored coworkers throughout training process</li></ul></p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p> <strong>Joined:</strong>
+                              Jan&nbsp;2011
+                            </p>
+                            <p>
+                                <strong>Left:</strong>
+                                Aug&nbsp;2012
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              1 year 8 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Graduation Night Volunteer</strong>,&nbsp;
+                              <a href="https://www.amphi.com/schools/irhs/project-graduation.aspx"  target="_blank">Ironwood Ridge High School</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Aug&nbsp;2013 -
+                                  May&nbsp;2014
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year 10 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>I helped organize vendor contracts, volunteers, and budget before event and managed stations during events<ul><li>Organized and secured vendor contracts and donations</li><li>Developed an invoice reporting system to ensure payment deadlines were met</li></ul></p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>
+                              Aug&nbsp;2013
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>
+                                May&nbsp;2014
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              1 year 10 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Classroom Volunteer</strong>,&nbsp;
+                              <a href="https://www.amphi.com/schools/copper-creek.aspx"  target="_blank">Copper Creek Elementary School</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Sept&nbsp;2009 -
+                                  May&nbsp;2012
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years 9 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Helped teachers at public elementary school<ul><li>Helped teachers adopt new grade book technology</li>
+                          <li>Tutored students by addressing individual areas of concern</li></ul></p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>
+                              Sept&nbsp;2009
+                            </p>
+                            <p>
+                                <strong>Left:</strong>
+                                May&nbsp;2012
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years 9 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Member</strong>,&nbsp;
+                              <a href="http://www.meetup.com/Data-Wranglers-DC/"  target="_blank">Data Wranglers DC</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Mar&nbsp;2015 -
+                                  Present
+                              </span>
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  5 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Discuss innovative data managing systems with local professionals</p>
+                        </div>
+                         <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                              <strong>Joined:</strong>
+                              Mar&nbsp;2015
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              5 months</p>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="detail" id="skills">
+                <div class="icon">
+                  <i class="fa fa-lg fa-line-chart"></i>
+                  <span class="mobile-title">What can you do?</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    What can you do? <span class="grey">Skills</span>
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Business Analytics</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Microsoft Excel</span>
+                                <span class="label label-keyword">Python</span>
+                                <span class="label label-keyword">Microsoft PowerPoint</span>
+                                <span class="label label-keyword">Microsoft Visio</span>
+                                <span class="label label-keyword">Regulation</span>
+                                <span class="label label-keyword">Strategic Planning</span>
+                                <span class="label label-keyword">Contract Management</span>
+                                <span class="label label-keyword">Data Warehousing</span>
+                                <span class="label label-keyword">Research</span>
+                                <span class="label label-keyword">Planning, Budgeting, and Forecasting</span>
+                                <span class="label label-keyword">Intelligence</span>
+                                <span class="label label-keyword">Process Improvement</span>
+                                <span class="label label-keyword">Financial Planning</span>
+                                <span class="label label-keyword">Statistical Analysis</span>
+                                <span class="label label-keyword">Business Reports</span>
+                                <span class="label label-keyword">Presentations</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Client Relations</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Web Design</span>
+                                <span class="label label-keyword">HTML</span>
+                                <span class="label label-keyword">CSS</span>
+                                <span class="label label-keyword">Sales</span>
+                                <span class="label label-keyword">Event Planning</span>
+                                <span class="label label-keyword">Networking</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Miscellaneous</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Training</span>
+                                <span class="label label-keyword">Prioritizing</span>
+                                <span class="label label-keyword">Tutoring</span>
+                                <span class="label label-keyword">Problem Solving</span>
+                                <span class="label label-keyword">Organization</span>
+                            </div>
+                          </div>
+                        </li>
+                        
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="education">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                  <span class="mobile-title">What have you learned?</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    What have you learned? <span class="grey">Education</span>
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm study-type">
+                              <strong>Bachelor of Science</strong>
+                            </p>
+                              <p class="clear-margin-sm study-area">
+                              <strong>Business Administration</strong>
+                            </p>
+                            <p class="clear-margin-sm institution">
+                              University of Arizona
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                Aug&nbsp;2009 -
+                                  Jun&nbsp;2013
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Computers and the Internetworked Society</span>
+                                <span class="label label-keyword">Using and Managing Information Systems</span>
+                                <span class="label label-keyword">Macroeconomic and Global Institutions and Policy</span>
+                                <span class="label label-keyword">Quantitative Financial Management</span>                                
+                                <span class="label label-keyword">Intermediate Microeconomics</span>
+                                <span class="label label-keyword">Statistical Inference in Management</span>
+                                <span class="label label-keyword">Business Mathematics I</span>
+                                <span class="label label-keyword">Business Mathematics II</span>
+                                <span class="label label-keyword">Elements of Calculus</span>
+                                <span class="label label-keyword">Basic Operations Management</span>
+                                <span class="label label-keyword">Integrating Business Fundamentals with Ethics and Law in Management</span>
+                                <span class="label label-keyword">Business Law</span>
+                                <span class="label label-keyword">Management Policies</span>
+                                <span class="label label-keyword">Decision Analysis</span>
+                                <span class="label label-keyword">Business Communication</span>
+                                <span class="label label-keyword">Human Resource Management</span>
+                                <span class="label label-keyword">International Relations</span>
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Started:</strong>
+                              Aug&nbsp;2009
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>
+                                May&nbsp;2013
+                            </p>
+                          </div>
+                        </li>                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm study-type">
+                              <strong>Certificate with Distinction</strong>
+                            </p>
+                              <p class="clear-margin-sm study-area">
+                              <strong>Data Scientist's Toolbox</strong>
+                            </p>
+                            <p class="clear-margin-sm institution">
+                              Coursera
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                April 2015
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Certification ID:</span>
+                                <span class="label label-keyword">4RYPXE2KD6</span>
+                              </div>
+                            </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              April 2015
+                            </p>
+                          </div>
+                        </li>      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+  </body>
+</html>
